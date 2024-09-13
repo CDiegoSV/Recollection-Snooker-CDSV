@@ -21,6 +21,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: b66604e926eff3141ab7c3a0799a86ab, type: 2}
     - target: {fileID: 4046209798709188359, guid: 1fa96672a4762cd4da1a50d856b47abc, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4046209798709188359, guid: 1fa96672a4762cd4da1a50d856b47abc, type: 3}
       propertyPath: m_Name
       value: Cargo
       objectReference: {fileID: 0}
@@ -94,3 +98,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a889dc41fd0a1c94d8b8a512794b6449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cargoType: 5

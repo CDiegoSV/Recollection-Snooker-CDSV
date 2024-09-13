@@ -12,6 +12,8 @@ namespace Dante.RecollectionSnooker
 
     #endregion
 
+    [RequireComponent(typeof(RS_TokenFSM))]
+    
     public class Token : MonoBehaviour
     {
 
@@ -20,6 +22,8 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region References
+
+        protected RS_TokenFSM _tokenPhysicalFSM;
 
         #endregion
 
@@ -33,10 +37,14 @@ namespace Dante.RecollectionSnooker
 
         }
 
-
         #endregion
 
         #region Runtime Methods
+
+        protected virtual void InitializeToken()
+        {
+            _tokenPhysicalFSM = GetComponent<RS_TokenFSM>();
+        }
 
         #endregion
 
@@ -48,5 +56,4 @@ namespace Dante.RecollectionSnooker
 
         #endregion
     }
-
 }

@@ -5,7 +5,15 @@ using UnityEngine;
 namespace Dante.RecollectionSnooker
 {
     #region Enums
-
+    public enum CargoTypes
+    {
+        SCREW_PART, 
+        SUPPLIES,
+        MEDICINE,
+        FUEL,
+        CREW_MEMBER,
+        NONE
+    }
     #endregion
 
     #region Structs
@@ -16,7 +24,7 @@ namespace Dante.RecollectionSnooker
     {
 
         #region Knobs
-
+        public CargoTypes cargoType;
         #endregion
 
         #region References
@@ -30,6 +38,7 @@ namespace Dante.RecollectionSnooker
         #region Unity Methods
         void Start()
         {
+            base.InitializeToken();
 
         }
 

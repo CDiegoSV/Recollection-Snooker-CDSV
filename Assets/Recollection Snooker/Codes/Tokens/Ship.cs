@@ -30,6 +30,7 @@ namespace Dante.RecollectionSnooker
         #region Unity Methods
         void Start()
         {
+            base.InitializeToken();
 
         }
 
