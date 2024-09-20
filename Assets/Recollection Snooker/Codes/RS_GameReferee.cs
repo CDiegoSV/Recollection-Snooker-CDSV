@@ -32,26 +32,80 @@ namespace Dante.RecollectionSnooker
         //META MECHANICS
         VICTORY_OF_THE_PLAYER
     }
+
+    public enum PlayerIndex 
+    { 
+        ONE,
+        TWO,
+        THREE,
+        FOUR 
+    }
+
     #endregion
 
     public class RS_GameReferee : GameReferee
     {
 
+        #region References
+
+        [Header("References")]
+        [SerializeField]
+        public Cargo[] allCargo;
+
+        #endregion
+
         #region Runtime Variables
-        protected RS_GameStates rs_gameState;
+        protected new RS_GameStates _gameState;
+        protected PlayerIndex _playerIndex;
         #endregion
 
         #region Unity Methods
 
         void Start()
         {
-
+            InitializeGameReferee();
         }
 
-        void Update()
+        #endregion
+
+        #region RuntimeMethods
+
+        protected override void InitializeGameReferee()
+        {
+            _gameState = RS_GameStates.DROP_CARGO;
+            InitializeDropCargoState();
+        }
+
+        #endregion
+
+        #region FiniteStateMachine
+
+        #region DropCargo
+
+        protected void InitializeDropCargoState()
+        {
+            //TODO: Make the proper initilization of the state
+            foreach (Cargo cargo in allCargo)
+            {
+                cargo.StateMechanic(TokenStateMechanics.SET_GHOST);
+            }
+        }
+
+        protected void ManageDropCargoState()
         {
 
         }
+
+        protected void ExitDropCargoState()
+        {
+
+        }
+
+        #endregion DropCargo
+
+        #region CannonByDroppedCargo
+
+        #endregion CannonByDroppedCargo
 
         #endregion
     }

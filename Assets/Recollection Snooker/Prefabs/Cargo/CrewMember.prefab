@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7174991733037905757
+--- !u!1001 &1836639663716939186
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,10 +11,10 @@ PrefabInstance:
     - target: {fileID: 3679488388950018366, guid: aab48a996cab0304fb3cebd545bfe7bf, type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 3679488388950018366, guid: aab48a996cab0304fb3cebd545bfe7bf, type: 3}
       propertyPath: m_Name
-      value: Fuel
+      value: CrewMember
       objectReference: {fileID: 0}
     - target: {fileID: 3855055469012653399, guid: aab48a996cab0304fb3cebd545bfe7bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59,10 +59,10 @@ PrefabInstance:
     - target: {fileID: 4423840402948497995, guid: aab48a996cab0304fb3cebd545bfe7bf, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6ef36e12dc91f9440ad6a754a9c0cfa8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4de4fd8b395fbdf41a0eb47fbd94cdba, type: 2}
     - target: {fileID: 7764749577983403576, guid: aab48a996cab0304fb3cebd545bfe7bf, type: 3}
       propertyPath: cargoType
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

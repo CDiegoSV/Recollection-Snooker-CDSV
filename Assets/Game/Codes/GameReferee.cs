@@ -22,11 +22,25 @@ namespace Dante.Game
     {
         #region Runtime Variables
 
-        protected GameStates gameState;
+        protected GameStates _gameState;
 
         #endregion
 
         #region Unity Methods
+
+        private void Start()
+        {
+            InitializeGameReferee();
+        }
+
+        #endregion
+
+        #region Runtime Methods
+
+        protected virtual void InitializeGameReferee()
+        {
+            _gameState = GameStates.Starting_Game;
+        }
 
         #endregion
     }

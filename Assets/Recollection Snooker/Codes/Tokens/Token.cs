@@ -32,10 +32,10 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region Unity Methods
-        void Start()
-        {
+        //void Start()
+        //{
 
-        }
+        //}
 
         #endregion
 
@@ -49,6 +49,11 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region Public Methods
+
+        public void StateMechanic(TokenStateMechanics value)
+        {
+            _tokenPhysicalFSM.StateMechanic(value);
+        }
 
         #endregion
 
