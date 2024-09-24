@@ -49,7 +49,7 @@ namespace Dante.RecollectionSnooker
         #region References
 
         [Header("References")]
-        [SerializeField]
+        [SerializeField, HideInInspector]
         public Cargo[] allCargo;
 
         #endregion
@@ -84,7 +84,7 @@ namespace Dante.RecollectionSnooker
 
         protected void InitializeDropCargoState()
         {
-            //TODO: Make the proper initilization of the state
+
             foreach (Cargo cargo in allCargo)
             {
                 cargo.StateMechanic(TokenStateMechanics.SET_GHOST);

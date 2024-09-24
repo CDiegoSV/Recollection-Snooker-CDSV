@@ -61,6 +61,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d62efab9e2ff1458f60a5ac1092801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 2717577925835380625}
+  _meshCollider: {fileID: 3583116676427635430}
+  _meshRenderer: {fileID: 3914628658887294066}
+  materialAssets:
+    physicalMaterial: {fileID: 2100000, guid: 4491ad583d588b549bdbe881bb4f5d15, type: 2}
+    ghostMaterial: {fileID: 2100000, guid: 9ef40312b9da93546b5574f88ad528b1, type: 2}
   _physicalState: 0
 --- !u!33 &1855216604025376206
 MeshFilter:

@@ -32,6 +32,13 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region Runtime Variables
+        [Header("Runtime Variables")]
+
+        [SerializeField] protected bool isLoaded;
+
+        #endregion
+
+        #region Runtime Variables
 
         #endregion
 

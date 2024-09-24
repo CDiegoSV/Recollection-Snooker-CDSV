@@ -10,6 +10,14 @@ namespace Dante.RecollectionSnooker
 
     #region Structs
 
+    [System.Serializable]
+    public struct GameplayAtrributes
+    {
+        public bool isAvailableForFlicking;
+        public bool isOutOfTheBoard;
+        public bool isBeingDragged;
+    }
+
     #endregion
 
     [RequireComponent(typeof(RS_TokenFSM))]
@@ -28,14 +36,22 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region Runtime Variables
+        [Header("Runtime Variables")]
+
+        [SerializeField] protected GameplayAtrributes _gameplayAtrributes;
+
+        #endregion
+
+        #region Runtime Variables
 
         #endregion
 
         #region Unity Methods
-        //void Start()
-        //{
 
-        //}
+        private void FixedUpdate()
+        {
+            
+        }
 
         #endregion
 
@@ -43,7 +59,10 @@ namespace Dante.RecollectionSnooker
 
         protected virtual void InitializeToken()
         {
-            _tokenPhysicalFSM = GetComponent<RS_TokenFSM>();
+            if (_tokenPhysicalFSM == null)
+            {
+                _tokenPhysicalFSM = GetComponent<RS_TokenFSM>();
+            }
         }
 
         #endregion
@@ -58,6 +77,8 @@ namespace Dante.RecollectionSnooker
         #endregion
 
         #region Getters and Setters
+
+       
 
         #endregion
     }
